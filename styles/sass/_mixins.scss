@@ -1,0 +1,14 @@
+@mixin nav-font($size-value, $line-height, $letter-spacing) {
+    font-size: $size-value;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@mixin header-font($size-value, $line-height, $letter-spacing) {
+    font-size: $size-value;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+}
