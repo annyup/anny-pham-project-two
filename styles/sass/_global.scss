@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $main-bg;
+}
+
+h1, h3, h4 {
+    font-family: $main-font;
+    color: $main-color;
+}
+
+h2, p, a {
+    font-family: $second-font;
+    color: $body-color;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 32px;
+    letter-spacing: 2px;
+    padding: 20px 0 40px 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+// Wrapper styles
+
+.wrapper {
+    max-width: 1920px;
+    width: 80%;
+    margin: 0 auto;
+
+    position: relative;
+
+    border: 1px solid red;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    position: absolute;
+    top: 380px;
+    left: 600px;
+}
+
+h1 {
+    @include header-font(9.5rem, none, none);
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    font-size: 3.4rem;
+    letter-spacing: 10px;
+}
+
+h3 {
+    @include header-font(3.0rem, 58px, 4.89px);
+}
+
+p.logo {
+    font-family: $main-font;
+    color: $main-color;
+    font-size: 4.15rem;
+}
+
+ul.main-menu {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        list-style: none;
+        margin-right: 50px;
+    }
+
+    a {
+        @include nav-font(1.4rem, 29px, 1px);
+
+        &:hover {
+            color: $main-color;
+            transition: all .3s ease-in;
+        }
+    }
+}
+
+.read-more {
+    @include nav-font(2.0rem, none, none);
+
+    display: inline-block;
+    background-color: $second-color;
+    color: $body-color;
+    font-family: $main-font;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    padding: 10px 20px;
+
+    &:hover {
+        background-color: $main-color;
+        color: $second-bg;
+        transition: all .3s ease-in;
+    }
+}
+
+// Form styles
+
+form {
+    font-size: 1.4rem;
+}
+
+input {
+    border: none;
+}
+
+input::placeholder {
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+
+fieldset {
+    border: none;
+}
+
+textarea {
+    border: none;
+}
+
+// Footer styles
+
+footer {
+    background-color: $second-bg;
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .copyright {
+            padding: 10px 0;
+            text-align: center;
+        }
+    }
+}

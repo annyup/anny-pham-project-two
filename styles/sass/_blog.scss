@@ -1,0 +1,177 @@
+.blog-header {
+    background: url(../assets/blog-image-1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+
+    p {
+        padding: 0 0 30px 0;
+    }
+}
+
+
+.left-side {
+    position: relative;
+    top: -150px;
+
+    .blog-texts {
+        width: 68.2%;
+        padding: 50px 80px 0 0;
+        box-shadow: $second-color 10px 0;
+        border-bottom: 10px solid $second-color;
+
+        h3 {
+            font-size: 3.0rem;
+        }
+
+        .comment-date {
+            color: $body-color;
+            font-style: italic;
+        }
+    }
+
+    img {
+        width: 80%;
+        box-shadow: $second-color 20px 20px 0;
+
+        position: relative;
+        left: -12.5%;
+    }
+}
+
+// Aside section styles
+
+aside {
+    background-color: $second-color;
+    width: 25%;
+
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
+
+
+.mission-posts {
+
+    .right-side {
+
+        padding-left: 20px;
+        margin-bottom: 30px;
+
+        h5 {
+            @include header-font(2.0rem, none, none);
+            font-family: $main-font;
+            color: $body-color;
+        }
+        
+        p {
+            color: $body-color;
+            padding-right: 30px;
+        }
+
+        li {
+            font-size: 1.4rem;
+            font-family: $second-font;
+            color: $body-color;
+            list-style: none;
+        }
+
+        li:before {
+            content: "• ";
+            color: $main-color;
+        }
+    }
+}
+
+// Comment section styles
+
+.comment-wrapper {
+    margin-bottom: 100px;
+
+    h4 {
+        @include header-font(2.0rem, none, none);
+        color: $body-color;
+        margin-bottom: 30px;
+    }
+
+    .comment-area {
+        display: flex;
+        margin-bottom: 80px;
+    }
+
+    fieldset {
+        padding: 0;
+    }
+}
+
+.comment-container {
+    width: 68.2%;
+
+    .comment-text {
+        width: 80%;
+        padding-left: 30px;
+
+        .comment-date {
+            color: $main-color;
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+.form {
+    display: flex;
+    margin-bottom: 40px;
+
+    input {
+        color: $body-color;
+        background-color: $main-bg;
+        border-bottom: 2px solid $main-color;
+        font-family: $second-font;
+        padding: 20px;
+        flex: 1 1 auto;
+    }
+
+    input[type=email] {
+        margin-left: 15px;
+    }
+}
+
+textarea {
+    color: $body-color;
+    background-color: $main-bg;
+    border: 2px solid $main-color;
+    font-family: $second-font;
+    resize: none;
+    padding: 20px;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: $second-color;
+    color: $body-color;
+    font-family: $main-font;
+    font-size: 1.5rem;
+    border: none;
+    padding: 5px 0;
+    width: 100%;
+}
+
+// Taken from forms notes
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  

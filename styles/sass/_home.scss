@@ -1,0 +1,208 @@
+// Header stylings
+
+.home-image {
+    position: absolute;
+    top: 460px;
+}
+
+.home {
+    background: url(../assets/home-image-1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.header-container {
+    h1 {
+        margin-top: 10px;
+    }
+}
+
+// Section one styles
+
+.adventure {
+    padding: 15% 0 6% 0;
+}
+
+.adventure-shadow {
+    box-shadow: $second-color -20px 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-container {
+    width: 70%;
+}
+
+// Section two styles
+
+section.gallery {
+    background-color: $second-bg;
+    padding: 6% 0;
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.gallery .wrapper img {
+    width: calc(100% / 3 - 30px);
+}
+
+// Section three styles
+
+.second-menu {
+    padding: 6% 0 10% 0;
+
+    .wrapper {
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: row;
+        // justify-content: space-between;
+
+        .second-container {
+            width: 100%;
+            // padding-bottom: 20px;
+
+            p {
+                padding: 0;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            li {
+                display: flex;
+                width: 50%;
+                padding: 30px;
+            }
+        }
+    }
+}
+
+h4 {
+    @include header-font(2.7rem, 58px, 4.3px);
+}
+
+.second-menu i {
+    background-color: $second-color;
+    color: $body-color;
+    font-size: 2.0rem;
+    border-radius: 50%;
+    margin-right: 20px;
+    top: 10px;
+}
+
+.offers {
+    position: relative;
+
+    i {
+        padding: 15px 14px;
+    }
+}
+
+.community {
+    position: relative;
+
+    i {
+        padding: 15px 12px;
+    }
+}
+
+.blog {
+    position: relative;
+
+    i {
+        padding: 15px 20px;
+    }
+}
+
+.touch {
+    position: relative;
+
+    i {
+        padding: 15px 16px;
+    }
+}
+
+// Section four styles
+
+.group-programs {
+    background-color: $second-bg;
+    padding-top: 6%;
+}
+
+.left-container {
+    width: 40%;
+}
+
+.left-img {
+    width: 50%;
+    position: relative;
+    top: -145px;
+}
+
+.group-shadow {
+    box-shadow: $main-color 20px 20px 0;
+}
+
+.group-text {
+    margin: 0 10% 0 15%;
+}
+
+// Section five styles
+
+.new-locations {
+    background-color: $second-bg;
+    margin: -5% 0 0 0;
+    padding: 0;
+}
+
+.location-shadow {
+    box-shadow: $main-color -20px 20px 0;
+}
+
+.location-text {
+    margin: 0 15% 0 10%;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.right-container {
+    width: 40%;
+}
+
+.right-img {
+    width: 50%;
+    position: relative;
+    bottom: -60px;
+}
+
+section.banner-image {
+    background: url(../assets/banner-image.jpg);
+    background-size: cover;
+    height: 600px;
+}
+
+// Section six styles
+
+section.free-trials {
+    padding: 10% 0;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
