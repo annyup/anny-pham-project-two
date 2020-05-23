@@ -1,0 +1,205 @@
+@media (max-width: 1366px) {
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-side {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .contact-info {
+            width: 22%;
+        }
+    }
+}
+
+/* Media styles for tablets & mobile */
+
+@media (max-width: 1024px) {
+    
+    // Hamburger styles
+
+    .menu-sliding {
+        background-color: #000;
+        position: fixed;
+        z-index: 1;
+        right: -100%;
+        top: 50px;
+        width: 100%;
+        height: auto;
+        transition: all 0.5s;
+    }
+    
+    .menu-sliding li a {
+        color: #FFF;
+        display: inline-block;
+        font-size: 2.0rem;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu-sliding li a:hover {
+        display: inline-block;
+        border-radius: 0;
+        background-color: #BA0621;
+        padding: 10px 0;
+    }
+
+    label {
+        padding: 15px;
+    }
+
+    label, input {
+        display: block;
+    }
+
+    label i {
+        font-size: 3.0rem;
+    }
+    
+    input[type="checkbox"]:checked + .menu-sliding {
+        right: 0;
+    }
+    
+    input[type="checkbox"] {
+        display: none;
+    }
+    
+    label[for="toggle"] {
+        color: #FFF;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    // Home page styles
+
+    .home-image {
+        display: none;
+    }
+
+    .header-container .wrapper {
+
+        h1, h2 {
+            padding-left: 0px;
+        }
+    }
+
+    .adventure {
+        padding: 6% 0;
+    }
+
+    .second-menu {
+        padding: 6% 0;
+        
+        .wrapper ul {
+            display: inline;
+
+            li {
+                width: 100%;
+            }
+        }
+
+        h4 {
+            line-height: 48px;
+        }
+    }
+
+    .free-trials {
+        p {
+            text-align: center;
+        }
+    }
+
+    // Blog styles
+
+    .left-side {
+        .blog-texts {
+            width: 100%;
+            box-shadow: none;
+            padding: 50px 0 0 0;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+    .mission-posts {
+        display: none;
+    }
+
+    .comment-text {
+        width: 90%;
+    }
+
+    .comment-container {
+        width: 100%;
+    }
+
+    // Contact styles
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 924px) {
+    .contact-form form {
+        display: inline-block;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    // Blog styles
+
+    .form {
+        flex-direction: column;
+
+        input[type=email] {
+            margin-left: 0;
+        }
+    }
+
+    // Contact styles
+
+    .contact-side {
+        flex-direction: column;
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .address {
+            text-align: center;
+        }
+    }
+
+}
+
+@media (max-width: 545px) {
+    form {
+        font-size: 1.0rem;
+    }
+
+    .contact-form form {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 330px) {
+    .contact-form form {
+        padding: 5px;
+    }
+}

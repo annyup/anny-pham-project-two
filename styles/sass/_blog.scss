@@ -1,6 +1,7 @@
 .blog-header {
     background: url(../assets/blog-image-1.jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh;
 }
 
@@ -109,16 +110,16 @@ aside {
 
 .comment-container {
     width: 68.2%;
+}
 
-    .comment-text {
-        width: 80%;
-        padding-left: 30px;
+.comment-text {
+    width: 80%;
+    padding-left: 30px;
 
-        .comment-date {
-            color: $main-color;
-            font-weight: bold;
-            padding-bottom: 5px;
-        }
+    .comment-date {
+        color: $main-color;
+        font-weight: bold;
+        padding-bottom: 5px;
     }
 }
 
