@@ -1,3 +1,5 @@
+/* Blog page styles */
+
 .blog-header {
     background: url(../assets/blog-image-1.jpg);
 }
@@ -43,7 +45,7 @@ main {
     }
 }
 
-// Aside section styles
+/* Aside blog styles */
 
 aside {
     background-color: $second-color;
@@ -84,7 +86,7 @@ aside {
     }
 }
 
-// Comment section styles
+/* Comment blog styles */
 
 .comment-wrapper {
     margin-bottom: 100px;
@@ -157,6 +159,10 @@ button {
     border: none;
     padding: 5px 0;
     width: 100%;
+}
+
+button:focus {
+    border: 1px solid $body-color;
 }
 
 // Credits to Forms notes

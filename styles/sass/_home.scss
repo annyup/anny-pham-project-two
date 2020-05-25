@@ -1,4 +1,6 @@
-// Header stylings
+/* Home page styles */
+
+/* Header styles */
 
 .home-header {
     background: url(../assets/home-image-1.jpg);
@@ -25,7 +27,7 @@
     justify-content: flex-end;
 }
 
-// Section one styles
+/* Section one styles */
 
 .adventure {
     padding: 10% 0 6% 0;
@@ -48,7 +50,7 @@
     }
 }
 
-// Section two styles
+/* Section two styles */
 
 section.gallery {
     background-color: $second-bg;
@@ -67,7 +69,7 @@ section.gallery {
     width: calc(100% / 3 - 30px);
 }
 
-// Section three styles
+/* Section three styles */
 
 .second-menu {
     padding: 6% 0 10% 0;
@@ -115,7 +117,7 @@ section.gallery {
     }    
 }
 
-// Section four styles
+/* Section four styles */
 
 .group-programs {
     background-color: $second-bg;
@@ -137,7 +139,7 @@ section.gallery {
     box-shadow: $main-color 20px 20px 0;
 }
 
-// Section five styles
+/* Section five styles */
 
 .new-locations {
     background-color: $second-bg;
@@ -172,7 +174,7 @@ section.gallery {
     height: 600px;
 }
 
-// Section six styles
+/* Section six styles */
 
 .free-trials {
     padding: 10% 0;

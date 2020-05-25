@@ -1,6 +1,10 @@
+/* Media styles */
+
 /* Media styles for sections to fix padding/header for different resolutions */
 
 @media (max-width: 1440px) {
+
+    /* Home styles */
 
     .location-text {
         padding-bottom: 50px;
@@ -8,6 +12,8 @@
 }
 
 @media (max-width: 1366px) {
+
+    /* Contact styles */
 
     .contact-form {
         width: 100%;
@@ -62,7 +68,7 @@
         font-size: 12.0vw;
     }
     
-    // Hamburger styles
+    /* Hamburger menu styles */
 
     ul.main-menu {
         flex-direction: column;
@@ -128,7 +134,7 @@
         z-index: 2;
     }
 
-    // Home page styles
+    /* Home page styles */
 
     .home-image {
         display: none;
@@ -175,7 +181,7 @@
         top: 0;
     }
 
-    // Blog styles
+    /* Blog styles */
 
     .header-wrapper .wrapper {
         height: 55vh;
@@ -206,7 +212,7 @@
         width: 100%;
     }
 
-    // Contact styles
+    /* Contact styles */
 
     .contact-header .header-wrapper .wrapper {
         height: 55vh;
@@ -219,6 +225,8 @@
 
 @media (max-width: 924px) {
 
+    /* Home & Contact styles */
+
     .gallery .wrapper img {
         width:calc(100% / 3 - 10px);
     }
@@ -230,7 +238,7 @@
 
 @media (max-width: 800px) {
 
-    // Home styles
+    /* Home styles */
 
     p {
         font-size: 1.0rem;
@@ -240,8 +248,11 @@
         font-size: 2.5rem;
     }
 
-    .adventure .container {
-        flex-direction: column-reverse;
+    .adventure {
+
+        .container {
+            flex-direction: column-reverse;
+        }
 
         .text-container {
             text-align: center;
@@ -259,7 +270,7 @@
         }
     }
 
-    section.gallery .wrapper {
+    .gallery .wrapper {
         flex-direction: column;
         justify-content: space-between;
 
@@ -307,7 +318,7 @@
         display: none;
     }
 
-    // Blog styles
+    /* Blog styles */
 
     .form {
         flex-direction: column;
@@ -317,7 +328,7 @@
         }
     }
 
-    // Contact styles
+    /* Contact styles */
 
     .contact-side {
         flex-direction: column;
@@ -345,7 +356,7 @@
 
 @media (max-width: 545px) {
 
-    // Contact styles
+    /* Contact styles */
 
     form {
         font-size: 1.0rem;
@@ -358,7 +369,7 @@
 
 @media (max-width: 480px) {
 
-    // Home styles
+    /* Home styles */
 
     h3 {
         font-size: 2.4rem;
@@ -388,9 +399,6 @@
         h4 {
             font-size: 2.0rem;
             padding-top: 20px;
-        }
-
-        h4, .offers, .community, .blog, .touch {
             text-align: center;
         }
     }
@@ -402,7 +410,7 @@
 
 @media (max-width: 330px) {
 
-    // Contact styles
+    /* Contact styles */
 
     .contact-form form {
         padding: 5px;

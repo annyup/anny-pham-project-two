@@ -1,3 +1,5 @@
+/* Global styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +31,7 @@ img {
     width: 100%;
 }
 
-// Wrapper styles
+/* Wrapper styles */
 
 .wrapper {
     max-width: 1920px;
@@ -46,7 +48,7 @@ img {
     padding: 30px 0;
 }
 
-// Header styles
+/* Header styles */
 
 h1 {
     @include header-font(9.0vw, none, none);
@@ -90,7 +92,7 @@ header.contact-header {
     }
 }
 
-// Navigation styles
+/* Navigation styles */
 
 ul.main-menu {
     display: flex;
@@ -134,7 +136,7 @@ label, input[type="checkbox"] {
     }
 }
 
-// Form styles
+/* Form styles */
 
 form {
     font-size: 1.4rem;
@@ -157,7 +159,7 @@ textarea {
     border: none;
 }
 
-// Footer styles
+/* Footer styles */
 
 footer {
     background-color: $second-bg;
